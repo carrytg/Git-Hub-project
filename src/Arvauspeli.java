@@ -26,6 +26,11 @@ public class Arvauspeli {
 			break;
 		}
 		
+		else if ( guess.equals("exit"))
+		{
+			break;
+		}
+		
 		else
 		{
 			guesses++;
