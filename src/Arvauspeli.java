@@ -9,8 +9,17 @@ public class Arvauspeli {
 		Scanner in = new Scanner (System.in);
 		
 		String rightAnswer = "Anton";
+		String quess;
+		String exit = "exit";
+		
+		do
+		{
 		
 		System.out.println("Guess the name. If you wish to leave, write exit.");
+		quess = in.nextLine();
+		
+		
+		}while(!quess.equals("exit"));
 
 	}
 
