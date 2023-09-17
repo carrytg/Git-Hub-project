@@ -19,28 +19,31 @@ public class Arvauspeli {
 		System.out.println("Guess the name. If you wish to leave, write exit.");
 		guess = in.nextLine();
 		
+		// right answer
 		if (guess.equals("Anton"))
 		{
 			guesses++;
 			System.out.println("Great! You guessed right!");
 			break;
-		}
-		
-		else if ( guess.equals("exit"))
+		}	
+		// exit
+		else if (guess.equals("exit"))
 		{
 			break;
 		}
 		
+		// wrong answer and wrong answer also gives the first letter
 		else
 		{
 			guesses++;
+			System.out.print("First letter of the name is: ");
+			System.out.println(rightAnswer.charAt(0));
 		}
-		
-		
+	
 		}while(!guess.equals("exit"));
 		
 		System.out.println("You guessed " + guesses + " times.");
-
+		
 	}
 
 }
