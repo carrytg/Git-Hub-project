@@ -11,6 +11,7 @@ public class Arvauspeli {
 		String rightAnswer = "Anton";
 		String guess;
 		String exit = "exit";
+		int guesses = 0;
 		
 		do
 		{
@@ -20,11 +21,20 @@ public class Arvauspeli {
 		
 		if (guess.equals("Anton"))
 		{
+			guesses++;
 			System.out.println("Great! You guessed right!");
+			break;
+		}
+		
+		else
+		{
+			guesses++;
 		}
 		
 		
 		}while(!guess.equals("exit"));
+		
+		System.out.println("You guessed " + guesses + " times.");
 
 	}
 
